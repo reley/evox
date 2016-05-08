@@ -41,6 +41,7 @@
 	table {
 		border-collapse: collapse;
 		border-spacing: 0;
+		background-color:#333;
 	}
 
 	
@@ -3169,7 +3170,8 @@ tr:nth-of-type(odd) {
 
 
 th { 
-  background: #333; 
+/*   background: #333; */ 
+  background: #000; 
   color: white; 
   font-weight: bold; 
 }
@@ -3186,6 +3188,7 @@ th {
 
 		table td {
 			padding: 0.75em 0.75em;
+			background-color:#333;
 		}
 
 		table th {
@@ -3512,10 +3515,12 @@ th {
 		margin-left: 18em;
 	}
 
-		@media screen and (max-width: 1280px) {
+		@media screen and (max-width: 1080px) {
 
 			#sidebar + #wrapper {
 				margin-left: 0;
+/* 				margin-left: 18em; */
+/* 				margin-left: 0;	 */			
 				padding-top: 3.5em;
 			}
 
@@ -3786,7 +3791,7 @@ th {
 			border: 0;
 /* 			color: rgba(255, 255, 255, 0.35); */
 			color: #ffffff;
-			display: block;
+/* 			display: block; */
 			font-size: 0.6em;
 			font-weight: bold;
 			letter-spacing: 0.25em;
@@ -3858,14 +3863,16 @@ th {
 
 			#sidebar {
 				height: 3.5em;
+				height: 0;
 				left: 0;
 				line-height: 3.5em;
+				line-height: 0;
 				overflow: hidden;
 				padding: 0;
 				text-align: center;
 				top: 0;
 				width: 100%;
-				/*Display:none;*/
+				Display:none;
 				/* Rory added this */
 			}
 
@@ -3922,7 +3929,16 @@ th {
 		@media screen and (max-width: 736px) {
 
 			#sidebar {
-				display: none;
+/* 				display: none; */
+				height: 3.5em;
+				left: 0;
+				line-height: 3.5em;
+				overflow: hidden;
+				padding: 0;
+				text-align: center;
+				top: 0;
+				width: 100%;
+				/* Rory added this */
 			}
 
 		}
